@@ -41,7 +41,7 @@
 * Effectuer une sortie du stock **️✔**
   * Commande client
   * Vente
-* Effectuer une correction de stock **️✔**
+* Effectuer une correction de stock **️✔***
     * Correction +
     * Correction -
     

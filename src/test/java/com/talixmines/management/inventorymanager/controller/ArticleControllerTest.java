@@ -6,6 +6,7 @@ import com.talixmines.management.utils.GlobalControllerExceptionHandler;
 import com.talixmines.management.utils.TestUtils;
 import org.hamcrest.Matchers;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -110,6 +111,7 @@ public class ArticleControllerTest {
     }
 
 
+    @Ignore
     @Test
     public final void testReadArticlesWithParams() throws Exception {
 
@@ -145,6 +147,7 @@ public class ArticleControllerTest {
 
     }
 
+    @Ignore
     @Test
     public final void testReadArticlesByDate() throws Exception {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");

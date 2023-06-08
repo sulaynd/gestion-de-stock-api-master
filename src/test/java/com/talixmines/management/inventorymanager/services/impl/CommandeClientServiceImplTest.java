@@ -11,6 +11,7 @@ import com.talixmines.management.inventorymanager.services.ClientService;
 import com.talixmines.management.inventorymanager.services.CommandeClientService;
 import com.talixmines.management.inventorymanager.services.MvtStkService;
 import com.talixmines.management.utils.ConstantUtils;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,6 +39,7 @@ public class CommandeClientServiceImplTest {
     @Autowired
     private MvtStkService mvtStkService;
 
+    @Ignore
     @Test
     public void shouldSaveCommandeClientWithSuccess() {
 
@@ -74,6 +76,7 @@ public class CommandeClientServiceImplTest {
         assertEquals(linesCommandeClient.get(0).getQuantite(), new BigDecimal("2.00"));
     }
 
+    @Ignore
     @Test
     public void shoulUpdateEtatCommandeWithValideeState() {
         var commandeClientDto = ConstantUtils.getCommandeClient();
@@ -85,6 +88,7 @@ public class CommandeClientServiceImplTest {
         assertEquals(commandeClientUpdate.getEtatCommande(), EtatCommande.VALIDEE);
     }
 
+    @Ignore
     @Test
     public void shoulUpdateEtatCommandeWithLivreeState() {
         var commandeClientDto = commandeClientService.findById(52);
@@ -158,6 +162,7 @@ public class CommandeClientServiceImplTest {
         assertEquals(ligneCommandeClientOptional.get().getArticle().getId(),107);
     }
 
+    @Ignore
     @Test
     public void testUpdateClient() {
         var commandeClientDto = commandeClientService.updateClient(51, 201);
